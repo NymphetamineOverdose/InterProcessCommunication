@@ -1,9 +1,8 @@
 var api = {};
 global.api = api;
 api.net = require('net');
-api.os = require('os');
 
-var clientsReqCount = api.os.cpus().length;
+var clientsReqCount = 3;
 var clients = [];
 var responces = [];
 var data = [1, 2, 3, 2, 1, 10, 12];
